@@ -8,10 +8,8 @@
 
 */
 
-@import url("https://fonts.googleapis.com/css?family=Hepta+Slab|Staatliches&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&display=swap');
 @import url('make-something-fly.css');
 @import url('animated-gradient.css');
 @import url('xtext-stroke.css');
@@ -56,12 +54,12 @@ html {
 
 :root {
   --primary-text-color: #222;
-  --accent-color: #555;
+  --accent-color: rgb(0, 0, 0);
   --hyperlink-color: #333;
   --hyperlink-alternate-color: orangered;
   --hover-color: #111;
-  --body-typeface: "Inter", sans-serif;
-  --heading-typeface: "Staatliches", cursive;
+  --body-typeface: 'Montserrat', sans-serif;
+  --heading-typeface: 'Montserrat', sans-serif;
   --off-white: #f8f8ff;
   --isabelline: #f4f0ec;
   --baby-powder: #fefefa;
@@ -120,7 +118,7 @@ h1 {
   font-size: 2rem;
   font-family: var(--heading-typeface);
   margin-bottom: 1rem;
-  color: var(--accent-color);
+  color: var(--accent-colors);
 }
 
 h2 {
@@ -212,7 +210,7 @@ p {
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 1rem;
+  grid-gap: 0;
   /* Magical, media-query-less responsiveness is achieved using the repeat() function and the auto placement keywords. To achieve wrapping, we can use the auto-fit. If you're using auto-fit, the content will stretch to fill the entire row width.  Specify a minimum width for the columns, using the minmax() function. The 1fr is what tells the browser to distribute the space between the columns so that each column equally gets one fraction of that space.  */
 }
 
@@ -488,7 +486,7 @@ p {
 
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    grid-gap: 1rem;
+    grid-gap: 0;
   }
 
 
@@ -530,7 +528,7 @@ p {
   /* Padding around work grid and project page */
   .portfolio,
   .project-wrapper {
-    padding: .5rem
+    padding: 0;
   }
 
   /* Project Page Flex Direction on Large Devices */
