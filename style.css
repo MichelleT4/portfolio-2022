@@ -120,7 +120,7 @@ h1 {
   font-size: 2rem;
   font-family: var(--heading-typeface);
   margin-bottom: 1rem;
-  color: var(--baby-powder);
+  color: var(--accent-color);
 }
 
 h2 {
