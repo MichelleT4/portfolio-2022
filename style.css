@@ -118,7 +118,7 @@ h1 {
   font-size: 2rem;
   font-family: var(--heading-typeface);
   margin-bottom: 1rem;
-  color: var(--accent-colors);
+  color: var(--accent-color);
 }
 
 h2 {
@@ -182,6 +182,7 @@ a:active {
 p {
   line-height: 1.3;
   margin-bottom: 1rem;
+  color: var(--accent-color);
 }
 .footer-copy {color:rgb(255,237,0)}
 
@@ -246,7 +247,7 @@ p {
 .branding-navigation {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-between; 
   padding: 1rem;
   align-items: center;
 }
@@ -395,10 +396,6 @@ p {
 /* Main Project Image Area */
 .project-details {
   width: 100%;
-  background-image: linear-gradient(-225deg,
-      #ff057c 0%,
-      #8d0b93 50%,
-      #321575 100%);
   padding: 1rem;
 }
 
@@ -438,23 +435,17 @@ p {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-  body {
-    background: var(--color-darkest);
-  }
+
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  body {
-    background: var(--color-dark);
-  }
+
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  body {
-    background: var(--color-normal);
-  }
+
 
   h1 {
     font-size: 4.275rem;
@@ -562,14 +553,10 @@ p {
 
   /* X-Large devices (large desktops, 1200px and up)*/
   @media (min-width: 1200px) {
-    body {
-      background: var(--color-light);
-    }
+
   }
 
   /* XX-Large devices (larger desktops, 1400px and up) */
   @media (min-width: 1400px) {
-    body {
-      background: var(--color-lightest);
-    }
+
   }}
